@@ -12,21 +12,21 @@
         box-sizing: border-box;
       }
 
-      body {
+      main {
         display: flex;
         max-width: 100vw;
         max-height: 100vh;
       }
 
-      .navigation-bar {
-        background-color: #d7e8d4;
+      nav {
+        background-color: rgb(215, 232, 212);
         width: 20vw;
         height: 100vh;
       }
 
       header,
       footer {
-        background-color: yellowgreen;
+        background-color: rgb(154, 205, 50);
         height: 20vh;
       }
 
@@ -38,11 +38,13 @@
       .content article {
         width: 75%;
         min-height: 60vh;
+        flex: 3 1 0%;
       }
 
       .content aside {
         width: 25%;
         background-color: #f3f9db;
+        flex: 1 1 0%;
       }
 
       p {
@@ -53,26 +55,26 @@
   <body>
     <!-- the entire body must be written by student -->
 
-    <header class="navigation-bar">
-      <nav>
+    <main>
+      <nav class="navigation-bar">
         <p>Nav</p>
       </nav>
-    </header>
-    <main class="main-content">
-      <header>
-        <p>Header</p>
-      </header>
-      <section class="content">
-        <article>
-          <p>Article</p>
-        </article>
-        <aside>
-          <p>Aside</p>
-        </aside>
+      <section class="main-content">
+        <header>
+          <p>Header</p>
+        </header>
+        <section class="content">
+          <article>
+            <p>Article</p>
+          </article>
+          <aside>
+            <p>Aside</p>
+          </aside>
+        </section>
+        <footer>
+          <p>Footer</p>
+        </footer>
       </section>
-      <footer>
-        <p>Footer</p>
-      </footer>
     </main>
 
     <script src="script.js" type="text/javascript"></script>
