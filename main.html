@@ -12,75 +12,67 @@
         box-sizing: border-box;
       }
 
-      article {
-        min-height: 60vh;
-      }
-
-      main {
+      body {
         display: flex;
-        flex-wrap: wrap;
-        height: 100vh;
+        max-width: 100vw;
+        max-height: 100vh;
       }
 
-      nav {
-        flex: 1;
+      .navigation-bar {
         background-color: #d7e8d4;
-        padding: 1em;
-      }
-
-      #main-content {
-        flex: 5;
-        display: flex;
-        flex-direction: column;
+        width: 20vw;
+        height: 100vh;
       }
 
       header,
       footer {
         background-color: yellowgreen;
-        flex: 1;
-        padding: 1em;
+        height: 20vh;
       }
 
-      section > section {
-        flex: 1;
+      .content {
         display: flex;
+        width: 80vw;
       }
 
-      article {
-        flex: 3;
-        padding: 1em;
+      .content article {
+        width: 75%;
+        min-height: 60vh;
       }
 
-      aside {
-        flex: 1;
-        padding: 1em;
+      .content aside {
+        width: 25%;
         background-color: #f3f9db;
+      }
+
+      p {
+        padding: 1em;
       }
     </style>
   </head>
   <body>
     <!-- the entire body must be written by student -->
 
-    <main>
+    <header class="navigation-bar">
       <nav>
         <p>Nav</p>
       </nav>
-      <section id="main-content">
-        <header>
-          <p>Header</p>
-        </header>
-        <section>
-          <article>
-            <p>Article</p>
-          </article>
-          <aside>
-            <p>Aside</p>
-          </aside>
-        </section>
-        <footer>
-          <p>Footer</p>
-        </footer>
+    </header>
+    <main class="main-content">
+      <header>
+        <p>Header</p>
+      </header>
+      <section class="content">
+        <article>
+          <p>Article</p>
+        </article>
+        <aside>
+          <p>Aside</p>
+        </aside>
       </section>
+      <footer>
+        <p>Footer</p>
+      </footer>
     </main>
 
     <script src="script.js" type="text/javascript"></script>
